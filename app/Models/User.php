@@ -58,4 +58,9 @@ class User extends Authenticatable
     protected $appends = [
         'profile_photo_url',
     ];
+
+    // 此處寫個一對多，每一個使用者可以寫很多文章
+    public function articles(){
+        return $this->hasMany('App\Models\Article');
+    }
 }

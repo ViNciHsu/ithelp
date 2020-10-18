@@ -8,4 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 class Article extends Model
 {
     use HasFactory;
+
+    // 每一篇文章都會有一個作者
+    public function user(){
+        return $this->belongsTo('App\Models\User');
+    }
+
+    protected $fillable = ['title','content'];
 }

@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7f91fb24-a234-4405-8a40-6338ec2afa6d" name="Default Changelist" comment="" />
+    <list default="true" id="7f91fb24-a234-4405-8a40-6338ec2afa6d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/views/articles/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ArticlesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ArticlesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Article.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Article.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_10_16_115917_create_articles_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_10_16_115917_create_articles_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/articles/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/articles/index.blade.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -167,18 +175,35 @@
       <option name="presentableId" value="Default" />
       <updated>1602837939677</updated>
       <workItem from="1602837940726" duration="52000" />
-      <workItem from="1602838001020" duration="9053000" />
+      <workItem from="1602838001020" duration="9833000" />
+      <workItem from="1603004484638" duration="6893000" />
     </task>
+    <task id="LOCAL-00001" summary="try push using IDE">
+      <created>1602865777489</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1602865777489</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="try push using IDE" />
+    <option name="LAST_COMMIT_MESSAGE" value="try push using IDE" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="0" y="0" key="CommitChangelistDialog2" timestamp="1602865045233">
+    <state x="283" y="0" key="CommitChangelistDialog2" timestamp="1602865776685">
       <screen x="0" y="0" width="2048" height="824" />
     </state>
-    <state x="0" y="0" key="CommitChangelistDialog2/0.0.2048.824@0.0.2048.824" timestamp="1602865045233" />
+    <state x="283" y="0" key="CommitChangelistDialog2/0.0.2048.824@0.0.2048.824" timestamp="1602865776685" />
+    <state x="1114" y="147" key="FileChooserDialogImpl" timestamp="1602865820266">
+      <screen x="0" y="0" width="2048" height="824" />
+    </state>
+    <state x="1114" y="147" key="FileChooserDialogImpl/0.0.2048.824@0.0.2048.824" timestamp="1602865820266" />
     <state width="1150" height="233" key="GridCell.Tab.0.bottom" timestamp="1602849533035">
       <screen x="0" y="0" width="2048" height="824" />
     </state>
@@ -199,5 +224,9 @@
       <screen x="0" y="0" width="2048" height="824" />
     </state>
     <state x="947" y="226" key="Vcs.Push.Dialog.v2/0.0.2048.824@0.0.2048.824" timestamp="1602865729081" />
+    <state x="1230" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1603008134537">
+      <screen x="0" y="0" width="2048" height="824" />
+    </state>
+    <state x="1230" y="145" width="672" height="678" key="search.everywhere.popup/0.0.2048.824@0.0.2048.824" timestamp="1603008134537" />
   </component>
 </project>

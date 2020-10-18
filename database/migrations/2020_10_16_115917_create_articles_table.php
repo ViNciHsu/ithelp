@@ -17,7 +17,7 @@ class CreateArticlesTable extends Migration
             $table->id();
             $table->string('title');
             $table->text('content');
-            $table->enum('state',['draft','published']); //enum:列舉
+            $table->enum('state',['draft','published'])->default('draft'); //enum:列舉
             $table->softDeletes();
             $table->foreignId('user_id');
             $table->timestamps();
