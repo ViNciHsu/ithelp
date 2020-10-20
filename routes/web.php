@@ -5,7 +5,7 @@ use App\Http\Controllers\ArticlesController;
 
 Route::resource('articles',ArticlesController::class);
 
-// 使用文章列表當作首頁
+// 使用文章列表當作首頁，使用name('root')代替('/')
 Route::get('/',[ArticlesController::class,'index'])->name('root');
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
