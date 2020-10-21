@@ -10,17 +10,24 @@ class ArticlesController extends Controller
 {
     // 一開始就判斷是否有登入
     public function __construct(){
-        $this->middleware('auth')->except('index');
+        $this->middleware('auth')->except('index','show');
     }
 
     public function index(){
         // 撈出 index.blade.php 要呈現的文章列表資料
         // 多筆資料，命名會給予複數
-//        $articles = Article::orderBy('id','desc')->get();
-        $articles = Article::paginate(3);
+        $articles = Article::orderBy('id','desc')->paginate(3);
         return view('articles.index',[
             'articles' => $articles
         ]);
+    }
+
+    public function show($id){
+        // 此處不需要針對登入者顯示對應的文章
+        // 因為文章應該每個人都能瀏覽
+        $article = Article::find($id);
+
+        return view('articles.show', ['article' => $article]);
     }
 
     public function create(){
@@ -63,5 +70,12 @@ class ArticlesController extends Controller
 
         // 重新導向我們在web.php設置的首頁，即name('root')，並用with()顯示更新成功的訊息
         return redirect()->route('root')->with('notice','文章更新成功！');
+    }
+
+    public function destroy($id){
+        // 此時需使用user角度，找到該篇文章，才能進行刪除
+        $article = auth()->user()->articles->find($id);
+        $article->delete();
+        return redirect()->route('root')->with('notice','文章已刪除！');
     }
 }

@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7f91fb24-a234-4405-8a40-6338ec2afa6d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/articles/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/articles/show.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ArticlesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ArticlesController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/articles/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/articles/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Article.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Article.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/articles/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/articles/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -183,7 +182,8 @@
       <workItem from="1602837940726" duration="52000" />
       <workItem from="1602838001020" duration="9833000" />
       <workItem from="1603004484638" duration="14083000" />
-      <workItem from="1603196511813" duration="7138000" />
+      <workItem from="1603196511813" duration="8594000" />
+      <workItem from="1603268770727" duration="3669000" />
     </task>
     <task id="LOCAL-00001" summary="try push using IDE">
       <created>1602865777489</created>
@@ -203,6 +203,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="try push using IDE" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="1499" y="182" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method0" timestamp="1603271912722">
+      <screen x="0" y="0" width="2048" height="824" />
+    </state>
+    <state x="1499" y="182" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method0/0.0.2048.824@0.0.2048.824" timestamp="1603271912722" />
     <state x="283" y="0" key="CommitChangelistDialog2" timestamp="1602865776685">
       <screen x="0" y="0" width="2048" height="824" />
     </state>
