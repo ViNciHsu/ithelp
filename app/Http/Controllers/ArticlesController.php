@@ -16,7 +16,7 @@ class ArticlesController extends Controller
     public function index(){
         // 撈出 index.blade.php 要呈現的文章列表資料
         // 多筆資料，命名會給予複數
-        $articles = Article::orderBy('id','desc')->paginate(3);
+        $articles = Article::with('user')->orderBy('id','desc')->paginate(10);
         return view('articles.index',[
             'articles' => $articles
         ]);
