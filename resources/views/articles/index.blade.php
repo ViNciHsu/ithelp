@@ -2,7 +2,10 @@
 
 @section('main')
     <h1 class="font-thin text-4xl">文章列表</h1>
-    <a href="{{ route('articles.create') }}">新增文章</a>
+    <div class="flex">
+        <a class="mr-2 px-2 rounded bg-green-500 text-green-100" href="{{ route('articles.create') }}">新增文章</a>
+        <a class="mr-2 px-2 rounded bg-blue-500 text-blue-100" href="export">匯出文章</a>
+    </div>
 
     @foreach($articles as $article)
         <div class="border-t border-gray-300 my-1 p-2">
@@ -16,7 +19,7 @@
             </p>
 
             <div class="flex">
-                <a class="mr-2" href="{{ route('articles.edit', $article) }}">編輯</a>
+                <a class="mr-2 px-2 rounded bg-yellow-500 text-yellow-100" href="{{ route('articles.edit', $article) }}">編輯</a>
 
                 <form action="{{ route('articles.destroy', $article) }}" method="post">
                     @csrf

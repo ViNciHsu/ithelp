@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ArticlesController;
+use App\Http\Controllers\ExcelController;
 
 Route::resource('articles',ArticlesController::class);
 
@@ -11,3 +12,6 @@ Route::get('/',[ArticlesController::class,'index'])->name('root');
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
+
+// export excel
+Route::get('/export', [ExcelController::class,'export']);

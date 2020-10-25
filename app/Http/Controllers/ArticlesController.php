@@ -78,4 +78,5 @@ class ArticlesController extends Controller
         $article->delete();
         return redirect()->route('root')->with('notice','文章已刪除！');
     }
+
 }
