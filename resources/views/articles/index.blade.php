@@ -5,6 +5,7 @@
     <div class="flex">
         <a class="mr-2 px-2 rounded bg-green-500 text-green-100" href="{{ route('articles.create') }}">新增文章</a>
         <a class="mr-2 px-2 rounded bg-blue-500 text-blue-100" href="export">匯出文章</a>
+        <a class="mr-2 px-2 rounded bg-gray-500 text-gray-100" href="import-form">匯入文章</a>
     </div>
 
     @foreach($articles as $article)

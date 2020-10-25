@@ -16,5 +16,5 @@ class Article extends Model
         return $this->belongsTo('App\Models\User');
     }
 
-    protected $fillable = ['title','content'];
+    protected $fillable = ['title','content','state','user_id'];
 }

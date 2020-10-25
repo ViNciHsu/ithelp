@@ -15,3 +15,6 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 
 // export excel
 Route::get('/export', [ExcelController::class,'export']);
+// import excel
+Route::get('/import-form', [ExcelController::class,'importForm']);
+Route::post('/import',[ExcelController::class,'import']);
